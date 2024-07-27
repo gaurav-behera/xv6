@@ -31,11 +31,11 @@ The **RBI** (Recent Behaviour Index) of a process measures its recent behavior a
 
 - Definition of the variables:
   
-    - $$RTime$$ : The total time the process has been running since it was last scheduled.
+    - $RTime$ : The total time the process has been running since it was last scheduled.
     
-    - $$STime$$: The total time the process has spent sleeping (i.e., blocked and not using CPU time) since it was last scheduled.
+    - $STime$: The total time the process has spent sleeping (i.e., blocked and not using CPU time) since it was last scheduled.
     
-    - $$WTime$$: The total time the process has spent in the ready queue waiting to be scheduled.
+    - $WTime$: The total time the process has spent in the ready queue waiting to be scheduled.
     
     - $$RBI = max\bigg(Int\bigg(\dfrac{3*RTime - STime - WTime}{RTime + WTime + STime + 1} * 50\bigg), 0\bigg)$$
     
